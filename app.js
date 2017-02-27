@@ -1,35 +1,9 @@
-//function statement
+var name = 'Jane';
 
-function greet(){
+(function(lastname){
+var name = 'Scott';
+console.log(name);
+console.log(lastname);
+}('Davis'));// immidietly invoke function impression
 
-    console.log('hi');
-}
-
-
-greet();
-
-//functions a re first class
-
-
-function logGreeting (fn){
-
-    fn();
-}
-
-logGreeting(greet);
-
-
-//function expression
-
-var greetMe = function () {
-
-    console.log('hi Scott');
-}
-
-greetMe();
-//it;s first class
-logGreeting(greetMe);
-//use a function expression on the fly
-logGreeting(function(){
-console.log('Hello Scott!');
-});
+console.log(name);
